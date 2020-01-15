@@ -6,7 +6,8 @@ date:       2020-01-15              # 时间
 author:     BK                      # 作者
 header-img: img/post-bg-2015.jpg    #这篇文章标题背景图片
 catalog: true                       # 是否归档
-tags:个人网站                                #标签
+tags:
+      -个人网站                                #标签
 
 ---
 
