@@ -15,7 +15,7 @@ tags:
 ## WordPress地址(URL)，不能随便更改！
 
 1.错误操作
-  在后台的设置里，WordPress地址（URL）是不能随便更改的，只有站点地址（URL）可以随意动。如果更改了WordPress地址（URL），主页面可能就丢失了。![URL删除-误操作](D:\Zack\Desktop\URL删除-误操作.png)
+  在后台的设置里，WordPress地址（URL）是不能随便更改的，只有站点地址（URL）可以随意动。如果更改了WordPress地址（URL），主页面可能就丢失了。
 
 2.解决方法
 以下操作在服务器终端执行  
@@ -26,8 +26,6 @@ tags:
 `USE wordpress;`  
 3.更改显示的列表中的option_values值,your_wordpress_url为正确的WordPress地址（URL）  
 `UPDATE wp_options SET option_value="your_wordpress_url" WHERE option_name="siteurl";`    
-
-![URL删除-属性表](D:\Zack\Desktop\URL删除-属性表.png)
 
 ## 然后就可以愉快地继续访问主页啦！
 
