@@ -27,7 +27,7 @@ tags:
 1.登陆到安装wordpress的服务器
 
 2.输入一下指令，打开数据库。（要求输入的是数据库的密码）  
-` mysql -u root -p `		  
+`mysql -u root -p`		  
 
 3.选中之前创建的数据库，默认为wordpress  
 `USE wordpress;`  
