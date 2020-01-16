@@ -21,7 +21,7 @@ tags:
 以下操作在服务器终端执行  
 
 1.输入一下指令，打开数据库。（要求输入的是数据库的密码）  
-` mysql -u root -p `		  
+`mysql -u root -p `		  
 2.选中之前创建的数据库，默认为wordpress  
 `USE wordpress;`  
 3.更改显示的列表中的option_values值,your_wordpress_url为正确的WordPress地址（URL）  
