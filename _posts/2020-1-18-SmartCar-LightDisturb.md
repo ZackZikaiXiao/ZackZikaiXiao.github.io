@@ -2,7 +2,7 @@
 layout:     post                    # 使用的布局（不需要改）
 title:     阳光算法  # 标题 
 subtitle:   Method for disturbing light in Smart Car. #副标题
-date:       2020-01-16              # 时间
+date:       2020-01-18              # 时间
 author:     ZK                      # 作者
 header-img: img/post-bg-2015.jpg    #这篇文章标题背景图片
 catalog: true                       # 是否归档
