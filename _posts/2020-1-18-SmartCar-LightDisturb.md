@@ -20,17 +20,17 @@ tags:
 
 ## 2.解决方案
 
-​		先采用如下卷积算子预处理图像，在此基础上进行二值化，最后中线提取。相比于直接二值化，本方案可保留丰富的边缘信息。![卷积.jpg](https://images.gitee.com/uploads/images/2020/0118/084618_8be65d42_5591410.jpeg)
+​		先采用如下卷积算子预处理图像，在此基础上进行二值化，最后中线提取。相比于直接二值化，本方案可保留丰富的边缘信息。![卷积.jpg](https://i.loli.net/2020/01/28/yqcUtmAHxDdGYNF.jpg)
 
 ## 3.效果展示
 
 * 传统处理
 
-![对比三.jpg](https://images.gitee.com/uploads/images/2020/0118/084617_629e9fe6_5591410.jpeg)
+![对比三.jpg](https://i.loli.net/2020/01/28/XNVtnJG6bivfO7l.jpg)
 
 * 卷积算子
 
-![对比2.jpg](https://images.gitee.com/uploads/images/2020/0118/084617_b682828d_5591410.jpeg)
+![对比2.jpg](https://i.loli.net/2020/01/28/249g8Ut6FIcQGCn.jpg)
 
 
 
