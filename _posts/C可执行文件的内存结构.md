@@ -1,0 +1,44 @@
+---
+layout:     keynote
+title:      "C可执行文件的内存结构"
+subtitle:   "Stucture of .out file "
+date:       2020-01-28
+author:     "ZK"
+tags:
+    - C
+    - linux
+---
+
+
+> linux的terminal中,GNU工具`size`可查看可执行文件的内存结构,完整命令如下
+
+```bash
+[zack@cppdemo]$ ls
+demoapp.out  mycpp.cpp
+[zack@cppdemo]$ cat mycpp.cpp 
+#include <iostream>
+
+int factorial(int var)
+{
+	if(var == 1){return 1;}
+	else{return var * factorial(var-1);}
+
+}
+
+int main(void)
+{
+	std::cout <<factorial(30) << std::endl;
+	return 0;
+}[zack@cppdemo]$ size demoapp.out 
+   text	   data	    bss	    dec	    hex	filename
+   2119	    608	    280	   3007	    bbf	demoapp.out
+
+```
+
+
+
+1. text代码段:存放二进制程序和常量.
+2. data数据段:存放全局的或者静态的初始化变量.
+3. bss:存放未初始化或者初始化为0的全局或者静态变量.
+4. stack栈:寄存,交换临时数据的内存区.
+5. heap堆:存放被动态分配的内存段,例如malloc等函数.
