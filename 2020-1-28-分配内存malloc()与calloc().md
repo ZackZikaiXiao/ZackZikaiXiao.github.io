@@ -1,5 +1,5 @@
 ---
-layout:     keynote
+layout:     post
 title:      "分配内存malloc()与calloc()"
 subtitle:   "malloc() & calloc() "
 date:       2020-01-28
