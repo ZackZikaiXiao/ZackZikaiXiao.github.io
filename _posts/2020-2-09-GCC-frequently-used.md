@@ -1,10 +1,11 @@
 ---
-layout:		keynote
+layout:		post
 title:		"GCC常用语法"
 subtitle:	"Frequently-used command in GCC"
 date:		2020-02-09
 author:		"Zack"
-tags:	- C		
+tags:	
+    - C		
 ---
 # 一、GCC
 
