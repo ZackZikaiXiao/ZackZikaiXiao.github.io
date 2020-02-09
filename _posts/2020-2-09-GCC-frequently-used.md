@@ -5,7 +5,7 @@ subtitle:	"Frequently-used command in GCC"
 date:		2020-02-09
 author:		"Zack"
 tags:		
-		- C
+	- C
 ---
 # 一、GCC
 
