@@ -16,7 +16,7 @@ tags:
 
    ```c
    #include <stdio.h>
-   #include <stdlib.h>
+   #include <stdlib.h>		//包含了malloc()的库
    
    int main() {
    
