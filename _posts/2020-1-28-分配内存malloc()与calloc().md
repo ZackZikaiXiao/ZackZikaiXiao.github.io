@@ -98,6 +98,7 @@ int main(){
     img[4][0] = 50;
     printf("%d\n", img[3][2]);
     printf("%d", img[4][0]);
+    free(img);
     return 0;
 }
 ```
@@ -122,6 +123,7 @@ int main(){
     img[4][0] = 50;
     printf("%d\n", img[3][2]);
     printf("%d", img[4][0]);
+    free(img);
     return 0;
 }
 ```
