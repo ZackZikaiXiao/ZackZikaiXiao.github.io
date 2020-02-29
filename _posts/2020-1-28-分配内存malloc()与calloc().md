@@ -15,15 +15,15 @@ tags:
    C Primer Plus上的示例代码(简单修改)如下:
 
    ```c
-   #include <iostream>
-   using namespace std;
+   #include <stdio.h>
+   #include <stdlib.h>
    
    int main() {
    
        double* ptd;
        ptd = (double*)malloc(30*sizeof(double));
        ptd[0] = 1;
-       cout<<ptd[0];    
+       printf("%f", ptd[0]);
        return 0;
    }
    ```
@@ -65,5 +65,64 @@ tags:
 
    这个比较简单,形参输入ptd即可.
 
-> 即便可以动态分配内存,但貌似分配一维的,二维图片仍旧不行,有待进一步学习哦.
+> 即便可以动态分配内存,但貌似分配一维的,二维图片仍旧不行,有待进一步学习哦
+
+<hr/>
+
+> 2020-2-29补充：
+
+> malloc(分配二维数组十分灵活，最关键的是理解二维数组指针的概念。下面提供创建5*3二维数组代码。
+>
+> 注意：行列数必须是常量，不可是变量。
+
+方法一：二级指针创建
+
+```c
+    int **img = (int **)malloc(sizeof(int)*3);
+    for (int i=0;i<5;i++){
+        img[i] = (int*)malloc(sizeof(int)*5);
+    }
+```
+
+`完整代码`
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int **img = (int **)malloc(sizeof(int)*3);
+    for (int i=0;i<5;i++){
+        img[i] = (int*)malloc(sizeof(int)*5);
+    }
+    img[3][2] = 5;
+    img[4][0] = 50;
+    printf("%d\n", img[3][2]);
+    printf("%d", img[4][0]);
+    return 0;
+}
+```
+
+
+
+方法二：指针数组创建
+
+```c
+int (*img)[3] = (int(*)[3])malloc(sizeof(int)*3*5);
+```
+
+`完整代码`
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    int (*img)[3] = (int(*)[3])malloc(sizeof(int)*3*5);
+
+    img[3][2] = 5;
+    img[4][0] = 50;
+    printf("%d\n", img[3][2]);
+    printf("%d", img[4][0]);
+    return 0;
+}
+```
 
